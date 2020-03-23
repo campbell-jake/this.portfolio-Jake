@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+#logo{
+	height: 200px; 
+	width: auto;
+}
+
+ul{
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+#showNav{
+	float: left;
+}
+
+#hideNav{
+	display: none;
+}
+
+.login{
+	float: right;
+}
+
+.afterLogin{
+	float: right;
+}
+
+li button{
+	display: block;
+	width: auto;
+	color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+li button:hover{
+	background-color: #555;
+  	color: white;
+}
+
+li a{
+	display: block;
+	width: auto;
+	color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.park-detail-image{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:75%;
+	height: auto;
+}
+
+.parkDetailCenter{
+	text-align: center;
+}
+
+.homepage-flex-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.homepage-flex-container > div{
+	padding: 10px;
+}
+
+#homepageCenter{
+	text-align: center;
+}
+
+#parkStuff{
+	margin-top: -25px;
+}
+
+#today-label{
+	margin-left: 75px;
+	font-size: 30px;"
+}
+
+#inspirational-quote{
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+#inspirational-quote p{
+	padding: 0;
+	margin: 0;
+}
+
+.parkDetail-flex-container{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.parkDetail-flex-container img{
+	width: 100%;
+	height: auto;
+}
+
+.parkDetail-flex-container > div{
+	margin: 10px;
+}
+
+.parkWeather-flex-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.parkWeather-flex-container > div{
+	width: 20%;
+	margin: 10px;
+}
+
+.favPark-flex-container{
+	display: flex;
+	align-items: center;
+}
+
+.favPark-flex-container img{
+	width: 250px;
+	height: auto;
+}
+
+.favPark-flex-container > div{
+	margin: 20px;
+}
+
+.favPark{
+	margin-left: 20px;
+}
+
+.mainContainer{
+	background-image: linear-gradient(to bottom right, #BBEEF4, #72AE6B);
+}
+
+.errors{
+	color: red;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.registrationLabel{
+	display: inline-block;
+	width: 125px;
+}
+
+#registrationForm{
+	margin-left: 10px;
+}
+
+.form-group{
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.loginLabel{
+	display: inline-block;
+	width: 75px;
+}
+
+.changePasswordLabel{
+	display: inline-block;
+	width: 175px;
+}
+
+#survey-page{
+	margin-left: 10px;
+}
+
+#survey-page form label{
+	display: inline-block;
+	width: 160px;
+}
+
+/* .radio{
+	display: inline-block;
+} */
+
+#landingPage{
+	margin-left: 10px;
+}
+
+#userAccount{
+	margin-left: 10px;
+}
+
+#forgotPassword{
+	margin-left: 80px;
+	color: blue;
+	text-decoration: underline;
+}
+
+#passwordHintDisplay{
+	padding: 0;
+	margin-left: 80px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-style: italic;
+}
