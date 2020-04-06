@@ -31,7 +31,7 @@ public class ForecastMessageTest {
 		Weather dayThree = new Weather();
 		dayThree.setForecast("thunderstorms");
 		dayThree.setLowTemp(50);
-		dayThree.setHighTemp(77);
+		dayThree.setHighTemp(74);
 		testWeatherList.add(dayThree);
 		
 		Weather dayFour = new Weather();
@@ -48,7 +48,7 @@ public class ForecastMessageTest {
 		
 		ForecastMessage testObject = new ForecastMessage(testWeatherList);
 		
-		ArrayList<String> expectedStringArray = new ArrayList<String>(5);
+		List<String> expectedStringArray = new ArrayList<String>(5);
 		expectedStringArray.add("Looks like snow! Pack snowshoes! Exposure to frigid temperatures can result in serious and life threatening harm. Dress warmly!");
 		expectedStringArray.add("Looks like rain! Pack raingear and wear waterproof shoes. Stay hydrated. Bring an extra gallon of water.");
 		expectedStringArray.add("Beware of thunderstorms! Seek shelter and avoid hiking on exposed ridges. Wide range of temperatures expected. Wear breathable layers.");
@@ -57,7 +57,7 @@ public class ForecastMessageTest {
 		
 		List<String> displayRecommendation = testObject.getDisplayRecommendation();
 		
-		assertArrayEquals("The weather recommendations do not match. ", expectedStringArray, displayRecommendation);
+		assertEquals("The weather recommendations do not match. ", expectedStringArray, displayRecommendation);
 	}
 
 }
