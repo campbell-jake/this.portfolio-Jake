@@ -22,7 +22,7 @@ import com.techelevator.model.register.JdbcRegisterDao;
 import com.techelevator.model.survey.JdbcSurveyDao;
 import com.techelevator.model.weather.JdbcWeatherDao;
 
-public abstract class AllDAOIntegrationTest {
+public class DAOIntegrationTest {
 
 	/* Using this particular implementation of DataSource so that
 	 * every database interaction is part of the same database
@@ -82,7 +82,7 @@ public abstract class AllDAOIntegrationTest {
 	public void testGetAllParks() {
 		List<Park> allParks = testParkDao.getAllParks();
 		assertNotNull(allParks);
-		assertEquals(13, allParks.size());	
+		assertEquals(10, allParks.size());	
 	}
 	
 }
