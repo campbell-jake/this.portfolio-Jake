@@ -76,7 +76,19 @@
 
 <h1 class="parkDetailCenter">Five Day Forecast</h1>
 
-<p id="today-label">Today</p>
+<div class="five-dates-flex-container">
+	<div>
+		<jsp:useBean id="ourDate" class="java.util.Date"/>
+		<jsp:setProperty name="ourDate" property="time" value="${ourDate.time}"/>
+		<fmt:formatDate value="${ourDate}" dateStyle="long"/>
+	</div>
+	<c:forEach begin="1" end="4" var="aDay">
+		<div>
+			<jsp:setProperty name="ourDate" property="time" value="${ourDate.time + 86400000}"/>
+			<fmt:formatDate value="${ourDate}" dateStyle="long"/>
+		</div>	
+	</c:forEach>
+</div>
 
 	<c:choose>
 		<c:when test="${tempPreference=='celsius'}">

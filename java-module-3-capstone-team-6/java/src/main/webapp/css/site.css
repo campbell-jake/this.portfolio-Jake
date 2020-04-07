@@ -108,6 +108,20 @@ a {
 	margin: 0;
 }
 
+.five-dates-flex-container{
+	display: flex;
+	justify-content: center;
+}
+
+.five-dates-flex-container > div{
+	width: 20%;
+	margin: 10px;
+	font-size: 20px;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+
 .parkDetail-flex-container{
 	display: flex;
 	width: 100%;

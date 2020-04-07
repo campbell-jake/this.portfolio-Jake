@@ -85,4 +85,12 @@ public class DAOIntegrationTest {
 		assertEquals(10, allParks.size());	
 	}
 	
+	@Test
+	public void testGetParkByParkCode() {
+		Park thePark = testParkDao.getParkByParkCode("CVNP");
+		assertNotNull(thePark);
+		assertEquals("Cuyahoga Valley National Park", thePark.getParkName());
+		
+	}
+	
 }
