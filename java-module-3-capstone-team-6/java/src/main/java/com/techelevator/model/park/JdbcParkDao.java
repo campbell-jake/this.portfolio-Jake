@@ -51,22 +51,6 @@ public class JdbcParkDao implements ParkDao {
 		return aPark;
 	}
 	
-	@Override
-	public List<String> getAllParkNames() {
-		
-		List<String> parkNames = new ArrayList<String>();
-		
-		String sqlGetAllParkNames = "select parkname from park";
-		
-		SqlRowSet results = jdbcTemplate.queryForRowSet(sqlGetAllParkNames);
-		
-		while(results.next()) {
-			parkNames.add(results.getString("parkname"));
-		}
-		
-		return parkNames;
-	}
-
 	private Park mapRowToPark(SqlRowSet results) {
 
 		Park aPark = new Park();
